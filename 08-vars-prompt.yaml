@@ -3,7 +3,8 @@
   connection: local
   vars_prompt:
   - name: COURSE
-    prompt: Please enter course name
+    prompt: Please enter course 
+    private: false # It is not confidentail information
   - name: DURATION
     prompt: Please enter duration
   - name: TRAINER
