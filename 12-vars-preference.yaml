@@ -11,8 +11,8 @@
     private: false
   tasks:
   - name: print the variable
-    vars:   # this would set GREET only for this task.
-      GREET: "TASK"
+    # vars:   # this would set GREET only for this task.
+    #   GREET: "TASK"
     ansible.builtin.debug:
       msg: "Hello from {{ GREET }}"
 
