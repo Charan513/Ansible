@@ -1,0 +1,12 @@
+- name: loops
+  hosts: local
+  connection: local
+  tasks:
+  - name: Print names
+    msg: "Hello {{ item }}"
+  loop:
+  -Satheesh
+  -Vassu
+  -Madhu
+  -Indra
+  -Manu
