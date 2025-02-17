@@ -13,18 +13,7 @@
     - { name: 'zip', state: 'absent' }
 
 
-  - name: Converting string to list
-    vars:
-      fruits: "apple, banana, orange"    #string
-    ansible.builtin.debug:
-      msg: "Fruits are: {{ fruits | split(',') }}"
-    
+
+
+
   
-  - name: Converting map to list
-  vars:
-    course:
-      name: Ansible
-      duration: 10hrs
-      trainer: siva kumar
-  ansible.builtin.debug:
-    msg: "Course info: {{ course | dict2items}}"
