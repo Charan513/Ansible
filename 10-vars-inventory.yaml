@@ -4,3 +4,10 @@
   - name: print course information
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+
+
+
+# Connect to different Nodes: Try to create new nodes for better pratice
+
+# 172.31.17.208 COURSE="DevOps with AWS" DURATION="120hrs" TRAINER="Siva Kumar" ansible_user=ec2-user ansible_password=DevOps321
+# localhost COURSE="Ansible" DURATION="10hrs" TRAINER="Siva Kumar" ansible_user=ec2-user ansible_password=DevOps321
