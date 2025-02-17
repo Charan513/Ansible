@@ -1,18 +1,18 @@
 - name: variables
   hosts: local
   connection: local
-  # vars: # PLAY level variables ( this would set GREET at the play level, making it available for all tasks.)
-  #   GREET: "PLAY"
-  # vars_files:   # This would load variables from an external YAML file
-  #   - course.yaml
-  # vars_prompt:  # This would prompt the user to enter a value for GREET at runtime.
-  # - name: GREET
-  #   prompt: Enter the value
-  #   private: false
+  vars: # PLAY level variables ( this would set GREET at the play level, making it available for all tasks.)
+    GREET: "PLAY"
+  vars_files:   # This would load variables from an external YAML file
+    - course.yaml
+  vars_prompt:  # This would prompt the user to enter a value for GREET at runtime.
+  - name: GREET
+    prompt: Enter the value
+    private: false
   tasks:
   - name: print the variable
-    # vars:   # this would set GREET only for this task.
-    #   GREET: "TASK"
+    vars:   # this would set GREET only for this task.
+      GREET: "TASK"
     ansible.builtin.debug:
       msg: "Hello from {{ GREET }}"
 
