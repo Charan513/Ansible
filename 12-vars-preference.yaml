@@ -3,12 +3,12 @@
   connection: local
   vars: # PLAY level variables ( this would set GREET at the play level, making it available for all tasks.)
     GREET: "PLAY"
-  vars_files:   # This would load variables from an external YAML file
+  # vars_files:   # This would load variables from an external YAML file
     # - course.yaml
-  vars_prompt:  # This would prompt the user to enter a value for GREET at runtime.
-  - name: GREET
+  # vars_prompt:  # This would prompt the user to enter a value for GREET at runtime.
+  # - name: GREET
     # prompt: Enter the value
-    private: false
+    # private: false
   tasks:
   - name: print the variable
     # vars:   # this would set GREET only for this task.
