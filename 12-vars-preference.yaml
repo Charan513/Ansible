@@ -7,7 +7,7 @@
     # - course.yaml
   vars_prompt:  # This would prompt the user to enter a value for GREET at runtime.
   - name: GREET
-    prompt: Enter the value
+    # prompt: Enter the value
     private: false
   tasks:
   - name: print the variable
